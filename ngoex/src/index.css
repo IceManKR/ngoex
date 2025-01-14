@@ -1,4 +1,5 @@
 .App{
+  flex:1;
   text-align: center;
   min-height: 100vh;
   display: flex;
@@ -50,6 +51,8 @@ header {
   width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
+  display:flex;
+  flex:1;
 }
 
 .container nav {
@@ -139,108 +142,6 @@ header {
 
 
 
-.mdb-footer {
-  background-color: #f8f9fa;
-  color: #6c757d;
-  padding-top: 40px;
-  padding-bottom: 20px;
-}
-
-.mdb-footer .text-muted {
-  color: #6c757d !important;
-}
-
-/* Styling for the social media section */
-.mdb-footer .d-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.mdb-footer .d-flex .me-5 {
-  font-size: 1rem;
-  color: #495057;
-}
-
-.mdb-footer .d-flex a {
-  color: #495057;
-  font-size: 1.3rem;
-  transition: color 0.3s ease;
-}
-
-.mdb-footer .d-flex a:hover {
-  color: #007bff;
-}
-
-/* Footer container */
-.mdb-footer .text-center {
-  text-align: center;
-}
-
-/* Footer sections */
-.mdb-footer h6 {
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: #343a40;
-}
-
-.mdb-footer p {
-  margin-bottom: 0.5rem;
-}
-
-.mdb-footer a {
-  color: #6c757d;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.mdb-footer a:hover {
-  color: #007bff;
-}
-
-.mdb-footer .mx-auto {
-  max-width: 350px;
-}
-
-/* Contact information styling */
-.mdb-footer .icon {
-  margin-right: 10px;
-}
-
-.mdb-footer .me-2 {
-  font-size: 1.2rem;
-}
-
-.mdb-footer .me-3 {
-  font-size: 1.2rem;
-}
-
-/* Footer bottom area */
-.mdb-footer .text-center p {
-  margin-bottom: 0;
-  color: #6c757d;
-}
-
-.mdb-footer .text-center a {
-  color: #007bff;
-  font-weight: bold;
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-  .mdb-footer .d-flex {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .mdb-footer .text-center {
-    text-align: center;
-  }
-
-  .mdb-footer .text-center p {
-    font-size: 0.9rem;
-  }
-}
 
 .buttons{
   display: flex;
@@ -285,14 +186,15 @@ header {
   padding: 20px;
   flex-wrap: wrap; /* Allow content to wrap on smaller screens */
 }
-.info-text {
+ .info-text {
   flex: 1; /* Allow the text to take available space */
   max-width: 60%; /* Text container will take up to 60% of the container */
   font-size: 1.5rem; /* Larger font size */
   line-height: 1.6; /* Better line spacing */
   color: #333; /* Darker text color */
   margin-bottom: 20px; /* Adds space between text and images */
-}
+} 
+
 .image {
   width: 100%; /* Ensure images fill the grid cell */
   height: 200px; /* Set fixed height */
@@ -334,4 +236,284 @@ header {
   display: flex;
   justify-content: center; /* Center the buttons horizontally */
   gap: 1rem; /* Add space between buttons */
+}
+
+.card{
+  width: 300px;
+  height: 400px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 50px auto;
+  background: skyblue;
+}
+.card-back{
+  background: teal;
+  width: 300px;
+  height: 400px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 50px auto;
+}
+.card2{
+  width: 300px;
+  height: 400px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 50px auto;
+  background: skyblue;
+}
+.card-back2{
+  background: teal;
+  width: 300px;
+  height: 400px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 50px auto;
+}
+.card3{
+  width: 300px;
+  height: 400px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 50px auto;
+  background: skyblue;
+}
+.card-back3{
+  background: teal;
+  width: 300px;
+  height: 400px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 50px auto;
+}
+.card4{
+  width: 300px;
+  height: 400px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 50px auto;
+  background: skyblue;
+}
+.card-back4{
+  background: teal;
+  width: 300px;
+  height: 400px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 50px auto;
+}
+/*----------------------------------------------------------------------------------*/
+/* Container for all the cards */
+.cards-container {
+  display: flex;                  /* Use flexbox to align cards horizontally */
+  gap: 10px;                       /* Adjust this value to control the space between cards */
+  flex-wrap: wrap;                 /* Allow cards to wrap on smaller screens */
+  justify-content: space-evenly;   /* Distribute the cards evenly, but still control space */
+  margin-top: 20px;
+}
+
+/* Individual card */
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;   /* Keep card width to 300px */
+  height: 400px;  /* Keep card height to 400px */
+  margin: 0;      /* Remove margin around each card */
+}
+
+/* Card styling */
+.card {
+  width: 300px;    /* Width of each card */
+  height: 400px;   /* Height of each card */
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: white;
+}
+
+/* Image inside the card */
+.card img {
+  width: 300px;        /* Make the image cover the full width */
+  height: 200px;      /* Set fixed height for the image */
+  object-fit: cover;  /* Ensure image covers the area proportionally without distortion */
+  object-position: center; /* Ensure the important part of the image is centered */
+  border-bottom: 1px solid #ddd; /* Optional: border to separate image and content */
+  border-radius: 25px;
+}
+
+/* Front of the card */
+.card-front {
+  border-radius:25 px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 400px;
+  width:300px;
+  padding: 10px;
+}
+
+/* Back of the card */
+.card-back {
+  
+  height: 400px;
+  width:300px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f1f1f1;
+  height: 100%;
+  text-align: center;
+}
+
+/* Title for the card (like dog name, breed, etc.) */
+.card-front h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Text for the card's back description */
+.card-back p {
+  font-size:x-large;
+  font-family:Roboto;;
+  padding: 10px;
+}
+.details{
+  font-size:x-large;
+  font-family:Roboto;
+}
+/* <---------------------------------------------------------------------------------2> */
+.carousel-inner {
+  display: flex; /* Ensure the items inside the carousel are aligned horizontally */
+}
+
+.carousel-item {
+  display: flex; /*Ensure that the cards inside the carousel stay horizontally aligned */
+  justify-content: center; /* Center the cards */
+  align-items: center; /* Vertically center the cards */
+  width: 500px;
+  height:400 px;
+}
+/* <--------------------------------------------------------------------------------------3> */
+.body-div{
+  height:700px;
+  background-color: white;
+}
+/* <---------------------------------------------------------------------------------------------4> */
+.section_padding{
+  padding:4rem 4rem;
+}
+.footer{
+  background-color: #2d2d32;
+}
+.sb_footer{
+  display:flex;
+  flex-direction:column;
+
+}
+.sb_footer-links{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction:row;
+  flex-wrap:wrap;
+  width:100%;
+  text-align: left;
+  margin-bottom:2rem;
+
+}
+.sb_footer-links_div{
+  width:150px;
+  margin:1rem;
+  display:flex;
+  justify-content:flex-start;
+  flex-direction:column;
+  color:white;
+}
+a{
+  color: rgb(175, 175, 179);
+  text-decoration:none;
+}
+.socialmedia{
+  display:flex;
+  flex-direction:row;
+}
+.socialmedia img{
+  width:80%;
+}
+.sb_footer-links_div h4{
+  font-size:14 px;
+  line-height:17px;
+  margin-bottom:0.9rem;
+}
+.sb_footer-links_div p{
+  font-size:12px;
+  line-height:15px;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+.sb_footer-below{
+  dislpay:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  margin-top:0.2rem;
+}
+.sb_footer-below-links{
+  display:flex;
+  flex-direction:row;
+}
+.sb_footer-below-links p{
+  font-size:13px;
+  line-height:15px;
+  margin-left:2rem;
+  color:white;
+  font-weight:600;
+}
+hr{
+  color:white !important;
+  width:100%;
+}
+.sb_footer-copyright p{
+  font-size:13px;
+  line-height:15px;
+  color:rgb(255,255,255);
+  font-weight:600;
+}
+@media screen and(max-width: 850px){
+  .sb_footer-heading h1{
+    font-size:44px;
+    line-height:50px;
+  }
+}
+@media screen and(max-width:550px){
+  .sb_footer-heading h1{
+    font-size:34px;
+    line-height:42px;
+
+  }
+  .sb_footer-links div{
+    margin: 1 rem 0;
+  }
+  .sb_footer-btn p{
+    font-size:14px;
+    line-height:20px;
+
+  }
+  .sb_footer-below{
+    flex-direction:column;
+    justify-content:left;
+  }
+  .sb_footer-below-lnks p{
+    margin:0rem;
+    margin:1 rem;
+  }
+
+
+}
+@media screen and (max-width:400px){
+  .sb_footer-heading h1{
+    font-size:27px;
+    line-height:38px;
+  }
 }
